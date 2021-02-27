@@ -1,16 +1,5 @@
-var boolean = false;
-console.log(boolean);
-console.log(2.998e8);
+var idade = 18;
 
-
-/*
-Os seguintes valores são considerados falsos no JavaScript:
-
-0;
--0;
-null;
-false;
-NaN;
-undefined;
-"" (string vazia).
-*/
+// operador ternário
+var resultado = idade >= 18 ? 'Maior de idade' : 'Menor de idade';
+console.log(resultado);
