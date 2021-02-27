@@ -1,5 +1,8 @@
-var idade = 18;
+// template strings
 
-// operador ternário
-var resultado = idade >= 18 ? 'Maior de idade' : 'Menor de idade';
-console.log(resultado);
+var idade = 22,
+    nome = 'Vinicius Dias',
+    about = '';
+
+about = `A idade de ${nome} é ${idade}`;
+console.log(about);
