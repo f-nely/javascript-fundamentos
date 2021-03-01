@@ -34,7 +34,24 @@ console.log(lapis); */
 //console.log(Object.keys(lapis));
 
 // transforma objeto em json
-console.log(JSON.stringify(lapis));
+//console.log(JSON.stringify(lapis));
 
 // transforma json em objeto
-console.log(JSON.parse('{"cor":"preto","tamanho":15,"ponta":0.5}'));
+//console.log(JSON.parse('{"cor":"preto","tamanho":15,"ponta":0.5}'));
+
+// extraindo campos de objetos
+let {cor, tamanho} = lapis;
+
+console.log(cor);
+
+/* function minhaFuncao(obj) {
+    console.log(obj.tamanho);
+}
+
+minhaFuncao(lapis); */
+
+function minhaFuncao({tamanho}) {
+    console.log(tamanho);
+}
+
+minhaFuncao(lapis);
